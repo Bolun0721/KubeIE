@@ -1,0 +1,10 @@
+# 文本文件统一在仓库内使用 LF，检出到各平台按需转换，避免换行符造成整文件 diff
+* text=auto eol=lf
+
+# 二进制文件不做换行转换
+*.png binary
+*.jpg binary
+*.ico binary
+*.jar binary
+*.exe binary
+*.zip binary

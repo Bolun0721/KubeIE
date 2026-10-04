@@ -1,0 +1,35 @@
+{
+  "name": "kubeie",
+  "productName": "KubeIE",
+  "version": "0.1.0",
+  "description": "KubeIE —— KubeJS 物品 / 配方 / 自定义物品 / Curios 饰品 可视化编辑器（Minecraft 1.20.1 / KubeJS 6）",
+  "main": "./out/main/index.js",
+  "private": true,
+  "author": "TrAE",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "start": "electron-vite preview",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json --composite false",
+    "typecheck:web": "vue-tsc --noEmit -p tsconfig.web.json --composite false",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dist": "npm run build && electron-builder --win --config electron-builder.yml",
+    "dist:dir": "npm run build && electron-builder --dir --config electron-builder.yml"
+  },
+  "devDependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@types/node": "^20.12.7",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "electron": "^30.0.9",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.2.0",
+    "element-plus": "^2.6.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0",
+    "vue": "^3.4.27",
+    "vue-tsc": "^2.0.19"
+  }
+}

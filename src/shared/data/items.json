@@ -1,0 +1,1028 @@
+[
+  {
+    "id": "minecraft:apple", "name": "苹果", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 4, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:golden_apple", "name": "金苹果", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 4, "saturation": 1.2 } }
+  },
+  {
+    "id": "minecraft:enchanted_golden_apple", "name": "附魔金苹果", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 4, "saturation": 1.2 } }
+  },
+  {
+    "id": "minecraft:bread", "name": "面包", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 5, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:carrot", "name": "胡萝卜", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 3, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:golden_carrot", "name": "金胡萝卜", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 6, "saturation": 1.2 } }
+  },
+  {
+    "id": "minecraft:potato", "name": "马铃薯", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 1, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:baked_potato", "name": "烤马铃薯", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 5, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:poisonous_potato", "name": "毒马铃薯", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 2, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:beetroot", "name": "甜菜根", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 1, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:beetroot_soup", "name": "甜菜汤", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "foodProperties": { "hunger": 6, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:mushroom_stew", "name": "蘑菇煲", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "foodProperties": { "hunger": 6, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:rabbit_stew", "name": "兔肉煲", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "foodProperties": { "hunger": 10, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:suspicious_stew", "name": "迷之炖菜", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "foodProperties": { "hunger": 6, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:beef", "name": "生牛肉", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 3, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:cooked_beef", "name": "牛排", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 8, "saturation": 0.8 } }
+  },
+  {
+    "id": "minecraft:porkchop", "name": "生猪排", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 3, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:cooked_porkchop", "name": "熟猪排", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 8, "saturation": 0.8 } }
+  },
+  {
+    "id": "minecraft:chicken", "name": "生鸡肉", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 2, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:cooked_chicken", "name": "熟鸡肉", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 6, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:mutton", "name": "生羊肉", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 2, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:cooked_mutton", "name": "熟羊肉", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 6, "saturation": 0.8 } }
+  },
+  {
+    "id": "minecraft:rabbit", "name": "生兔肉", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 3, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:cooked_rabbit", "name": "熟兔肉", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 5, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:cod", "name": "生鳕鱼", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 2, "saturation": 0.1 } }
+  },
+  {
+    "id": "minecraft:cooked_cod", "name": "熟鳕鱼", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 5, "saturation": 0.6 } }
+  },
+  {
+    "id": "minecraft:salmon", "name": "生鲑鱼", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 2, "saturation": 0.1 } }
+  },
+  {
+    "id": "minecraft:cooked_salmon", "name": "熟鲑鱼", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 6, "saturation": 0.8 } }
+  },
+  {
+    "id": "minecraft:tropical_fish", "name": "热带鱼", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 1, "saturation": 0.1 } }
+  },
+  {
+    "id": "minecraft:pufferfish", "name": "河豚", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 1, "saturation": 0.1 } }
+  },
+  {
+    "id": "minecraft:cookie", "name": "曲奇", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 2, "saturation": 0.1 } }
+  },
+  {
+    "id": "minecraft:melon_slice", "name": "西瓜片", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 2, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:sweet_berries", "name": "甜浆果", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 2, "saturation": 0.1 } }
+  },
+  {
+    "id": "minecraft:glow_berries", "name": "发光浆果", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 2, "saturation": 0.1 } }
+  },
+  {
+    "id": "minecraft:dried_kelp", "name": "干海带", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 1, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:pumpkin_pie", "name": "南瓜派", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 8, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:honey_bottle", "name": "蜂蜜瓶", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 16, "foodProperties": { "hunger": 6, "saturation": 0.1 } }
+  },
+  {
+    "id": "minecraft:chorus_fruit", "name": "紫颂果", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 4, "saturation": 0.3 } }
+  },
+  {
+    "id": "minecraft:rotten_flesh", "name": "腐肉", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 4, "saturation": 0.1 } }
+  },
+  {
+    "id": "minecraft:spider_eye", "name": "蜘蛛眼", "mod": "minecraft", "category": "food", "edible": true, "toolLike": false,
+    "defaults": { "defaultStackSize": 64, "foodProperties": { "hunger": 2, "saturation": 0.8 } }
+  },
+
+  {
+    "id": "minecraft:wooden_sword", "name": "木剑", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 59, "tier": { "speed": 2, "attackDamageBonus": 0, "level": 0 } }
+  },
+  {
+    "id": "minecraft:stone_sword", "name": "石剑", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 131, "tier": { "speed": 4, "attackDamageBonus": 1, "level": 1 } }
+  },
+  {
+    "id": "minecraft:iron_sword", "name": "铁剑", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 250, "tier": { "speed": 6, "attackDamageBonus": 2, "level": 2 } }
+  },
+  {
+    "id": "minecraft:golden_sword", "name": "金剑", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 32, "tier": { "speed": 12, "attackDamageBonus": 0, "level": 0 } }
+  },
+  {
+    "id": "minecraft:diamond_sword", "name": "钻石剑", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 1561, "tier": { "speed": 8, "attackDamageBonus": 3, "level": 3 } }
+  },
+  {
+    "id": "minecraft:netherite_sword", "name": "下界合金剑", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 2031, "tier": { "speed": 9, "attackDamageBonus": 4, "level": 4 } }
+  },
+  {
+    "id": "minecraft:trident", "name": "三叉戟", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 250 }
+  },
+  {
+    "id": "minecraft:bow", "name": "弓", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 384 }
+  },
+  {
+    "id": "minecraft:crossbow", "name": "弩", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 465 }
+  },
+  {
+    "id": "minecraft:arrow", "name": "箭", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:spectral_arrow", "name": "光灵箭", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:tipped_arrow", "name": "药箭", "mod": "minecraft", "category": "weapon", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+
+  {
+    "id": "minecraft:wooden_pickaxe", "name": "木镐", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 59, "tier": { "speed": 2, "attackDamageBonus": 0, "level": 0 } }
+  },
+  {
+    "id": "minecraft:stone_pickaxe", "name": "石镐", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 131, "tier": { "speed": 4, "attackDamageBonus": 1, "level": 1 } }
+  },
+  {
+    "id": "minecraft:iron_pickaxe", "name": "铁镐", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 250, "tier": { "speed": 6, "attackDamageBonus": 2, "level": 2 } }
+  },
+  {
+    "id": "minecraft:golden_pickaxe", "name": "金镐", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 32, "tier": { "speed": 12, "attackDamageBonus": 0, "level": 0 } }
+  },
+  {
+    "id": "minecraft:diamond_pickaxe", "name": "钻石镐", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 1561, "tier": { "speed": 8, "attackDamageBonus": 3, "level": 3 } }
+  },
+  {
+    "id": "minecraft:netherite_pickaxe", "name": "下界合金镐", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 2031, "tier": { "speed": 9, "attackDamageBonus": 4, "level": 4 } }
+  },
+  {
+    "id": "minecraft:wooden_axe", "name": "木斧", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 59, "tier": { "speed": 2, "attackDamageBonus": 0, "level": 0 } }
+  },
+  {
+    "id": "minecraft:stone_axe", "name": "石斧", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 131, "tier": { "speed": 4, "attackDamageBonus": 1, "level": 1 } }
+  },
+  {
+    "id": "minecraft:iron_axe", "name": "铁斧", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 250, "tier": { "speed": 6, "attackDamageBonus": 2, "level": 2 } }
+  },
+  {
+    "id": "minecraft:golden_axe", "name": "金斧", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 32, "tier": { "speed": 12, "attackDamageBonus": 0, "level": 0 } }
+  },
+  {
+    "id": "minecraft:diamond_axe", "name": "钻石斧", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 1561, "tier": { "speed": 8, "attackDamageBonus": 3, "level": 3 } }
+  },
+  {
+    "id": "minecraft:netherite_axe", "name": "下界合金斧", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 2031, "tier": { "speed": 9, "attackDamageBonus": 4, "level": 4 } }
+  },
+  {
+    "id": "minecraft:wooden_shovel", "name": "木锹", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 59, "tier": { "speed": 2, "attackDamageBonus": 0, "level": 0 } }
+  },
+  {
+    "id": "minecraft:stone_shovel", "name": "石锹", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 131, "tier": { "speed": 4, "attackDamageBonus": 1, "level": 1 } }
+  },
+  {
+    "id": "minecraft:iron_shovel", "name": "铁锹", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 250, "tier": { "speed": 6, "attackDamageBonus": 2, "level": 2 } }
+  },
+  {
+    "id": "minecraft:golden_shovel", "name": "金锹", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 32, "tier": { "speed": 12, "attackDamageBonus": 0, "level": 0 } }
+  },
+  {
+    "id": "minecraft:diamond_shovel", "name": "钻石锹", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 1561, "tier": { "speed": 8, "attackDamageBonus": 3, "level": 3 } }
+  },
+  {
+    "id": "minecraft:netherite_shovel", "name": "下界合金锹", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 2031, "tier": { "speed": 9, "attackDamageBonus": 4, "level": 4 } }
+  },
+  {
+    "id": "minecraft:wooden_hoe", "name": "木锄", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 59, "tier": { "speed": 2, "attackDamageBonus": 0, "level": 0 } }
+  },
+  {
+    "id": "minecraft:stone_hoe", "name": "石锄", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 131, "tier": { "speed": 4, "attackDamageBonus": 1, "level": 1 } }
+  },
+  {
+    "id": "minecraft:iron_hoe", "name": "铁锄", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 250, "tier": { "speed": 6, "attackDamageBonus": 2, "level": 2 } }
+  },
+  {
+    "id": "minecraft:golden_hoe", "name": "金锄", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 32, "tier": { "speed": 12, "attackDamageBonus": 0, "level": 0 } }
+  },
+  {
+    "id": "minecraft:diamond_hoe", "name": "钻石锄", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 1561, "tier": { "speed": 8, "attackDamageBonus": 3, "level": 3 } }
+  },
+  {
+    "id": "minecraft:netherite_hoe", "name": "下界合金锄", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": true, "diggerLike": true,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 2031, "tier": { "speed": 9, "attackDamageBonus": 4, "level": 4 } }
+  },
+  {
+    "id": "minecraft:shears", "name": "剪刀", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 238 }
+  },
+  {
+    "id": "minecraft:fishing_rod", "name": "钓鱼竿", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 64 }
+  },
+  {
+    "id": "minecraft:flint_and_steel", "name": "打火石", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 64 }
+  },
+  {
+    "id": "minecraft:carrot_on_a_stick", "name": "胡萝卜钓竿", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 25 }
+  },
+  {
+    "id": "minecraft:warped_fungus_on_a_stick", "name": "诡异菌钓竿", "mod": "minecraft", "category": "tool", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 100 }
+  },
+
+  {
+    "id": "minecraft:leather_helmet", "name": "皮革帽子", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 55 }
+  },
+  {
+    "id": "minecraft:leather_chestplate", "name": "皮革外套", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 80 }
+  },
+  {
+    "id": "minecraft:leather_leggings", "name": "皮革裤子", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 75 }
+  },
+  {
+    "id": "minecraft:leather_boots", "name": "皮革靴子", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 65 }
+  },
+  {
+    "id": "minecraft:chainmail_helmet", "name": "锁链头盔", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 165 }
+  },
+  {
+    "id": "minecraft:chainmail_chestplate", "name": "锁链胸甲", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 240 }
+  },
+  {
+    "id": "minecraft:chainmail_leggings", "name": "锁链护腿", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 225 }
+  },
+  {
+    "id": "minecraft:chainmail_boots", "name": "锁链靴子", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 195 }
+  },
+  {
+    "id": "minecraft:iron_helmet", "name": "铁头盔", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 165 }
+  },
+  {
+    "id": "minecraft:iron_chestplate", "name": "铁胸甲", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 240 }
+  },
+  {
+    "id": "minecraft:iron_leggings", "name": "铁护腿", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 225 }
+  },
+  {
+    "id": "minecraft:iron_boots", "name": "铁靴子", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 195 }
+  },
+  {
+    "id": "minecraft:golden_helmet", "name": "金头盔", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 77 }
+  },
+  {
+    "id": "minecraft:golden_chestplate", "name": "金胸甲", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 112 }
+  },
+  {
+    "id": "minecraft:golden_leggings", "name": "金护腿", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 105 }
+  },
+  {
+    "id": "minecraft:golden_boots", "name": "金靴子", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 91 }
+  },
+  {
+    "id": "minecraft:diamond_helmet", "name": "钻石头盔", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 363 }
+  },
+  {
+    "id": "minecraft:diamond_chestplate", "name": "钻石胸甲", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 528 }
+  },
+  {
+    "id": "minecraft:diamond_leggings", "name": "钻石护腿", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 495 }
+  },
+  {
+    "id": "minecraft:diamond_boots", "name": "钻石靴子", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 429 }
+  },
+  {
+    "id": "minecraft:netherite_helmet", "name": "下界合金头盔", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 407 }
+  },
+  {
+    "id": "minecraft:netherite_chestplate", "name": "下界合金胸甲", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 592 }
+  },
+  {
+    "id": "minecraft:netherite_leggings", "name": "下界合金护腿", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 555 }
+  },
+  {
+    "id": "minecraft:netherite_boots", "name": "下界合金靴子", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 481 }
+  },
+  {
+    "id": "minecraft:turtle_helmet", "name": "海龟壳", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 275 }
+  },
+  {
+    "id": "minecraft:shield", "name": "盾牌", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 336 }
+  },
+  {
+    "id": "minecraft:elytra", "name": "鞘翅", "mod": "minecraft", "category": "armor", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1, "maxDamage": 432 }
+  },
+
+  {
+    "id": "minecraft:stick", "name": "木棍", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:string", "name": "线", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:feather", "name": "羽毛", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:leather", "name": "皮革", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:flint", "name": "燧石", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:gunpowder", "name": "火药", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:bone", "name": "骨头", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:bone_meal", "name": "骨粉", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:coal", "name": "煤炭", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:charcoal", "name": "木炭", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:raw_iron", "name": "粗铁", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:iron_ingot", "name": "铁锭", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:iron_nugget", "name": "铁粒", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:raw_copper", "name": "粗铜", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:copper_ingot", "name": "铜锭", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:raw_gold", "name": "粗金", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:gold_ingot", "name": "金锭", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:gold_nugget", "name": "金粒", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:netherite_ingot", "name": "下界合金锭", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:netherite_scrap", "name": "下界合金碎片", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:diamond", "name": "钻石", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:emerald", "name": "绿宝石", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:lapis_lazuli", "name": "青金石", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:redstone", "name": "红石粉", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:nether_quartz", "name": "下界石英", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:amethyst_shard", "name": "紫水晶碎片", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:clay_ball", "name": "黏土球", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:brick", "name": "红砖", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:nether_brick", "name": "下界砖", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:wheat", "name": "小麦", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:wheat_seeds", "name": "小麦种子", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:beetroot_seeds", "name": "甜菜种子", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:melon_seeds", "name": "西瓜种子", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:pumpkin_seeds", "name": "南瓜种子", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:sugar_cane", "name": "甘蔗", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:sugar", "name": "糖", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:egg", "name": "鸡蛋", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:snowball", "name": "雪球", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:ender_pearl", "name": "末影珍珠", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:ender_eye", "name": "末影之眼", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:blaze_rod", "name": "烈焰棒", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:blaze_powder", "name": "烈焰粉", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:slime_ball", "name": "黏液球", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:magma_cream", "name": "岩浆膏", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:ghast_tear", "name": "恶魂之泪", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:phantom_membrane", "name": "幻翼膜", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:nether_star", "name": "下界之星", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:nether_wart", "name": "下界疣", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:glowstone_dust", "name": "荧石粉", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:prismarine_shard", "name": "海晶碎片", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:scute", "name": "鳞甲", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:paper", "name": "纸", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:book", "name": "书", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:enchanted_book", "name": "附魔书", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:writable_book", "name": "书与笔", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:written_book", "name": "成书", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:shulker_shell", "name": "潜影壳", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:dragon_breath", "name": "龙息", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:honeycomb", "name": "蜂巢", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:white_dye", "name": "白色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:light_gray_dye", "name": "淡灰色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:gray_dye", "name": "灰色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:black_dye", "name": "黑色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:brown_dye", "name": "棕色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:red_dye", "name": "红色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:orange_dye", "name": "橙色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:yellow_dye", "name": "黄色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:lime_dye", "name": "黄绿色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:green_dye", "name": "绿色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:cyan_dye", "name": "青色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:light_blue_dye", "name": "淡蓝色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:blue_dye", "name": "蓝色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:purple_dye", "name": "紫色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:magenta_dye", "name": "品红色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:pink_dye", "name": "粉红色染料", "mod": "minecraft", "category": "material", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+
+  {
+    "id": "minecraft:stone", "name": "石头", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:cobblestone", "name": "圆石", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:dirt", "name": "泥土", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:grass_block", "name": "草方块", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:sand", "name": "沙子", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:gravel", "name": "砂砾", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:obsidian", "name": "黑曜石", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:netherrack", "name": "下界岩", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:end_stone", "name": "末地石", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:oak_log", "name": "橡木原木", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:oak_planks", "name": "橡木木板", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:spruce_planks", "name": "云杉木板", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:birch_planks", "name": "白桦木板", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:glass", "name": "玻璃", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:glass_pane", "name": "玻璃板", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:torch", "name": "火把", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:crafting_table", "name": "工作台", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:furnace", "name": "熔炉", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:blast_furnace", "name": "高炉", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:smoker", "name": "烟熏炉", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:chest", "name": "箱子", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:ender_chest", "name": "末影箱", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:barrel", "name": "木桶", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:anvil", "name": "铁砧", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:enchanting_table", "name": "附魔台", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:bookshelf", "name": "书架", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:brewing_stand", "name": "酿造台", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:cauldron", "name": "炼药锅", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:hopper", "name": "漏斗", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:dispenser", "name": "发射器", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:dropper", "name": "投掷器", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:piston", "name": "活塞", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:observer", "name": "侦测器", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:redstone_block", "name": "红石方块", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:redstone_torch", "name": "红石火把", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:repeater", "name": "红石中继器", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:comparator", "name": "红石比较器", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:note_block", "name": "音符盒", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:tnt", "name": "TNT", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:hay_block", "name": "干草捆", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:slime_block", "name": "黏液块", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:glowstone", "name": "荧石", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:lantern", "name": "灯笼", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:campfire", "name": "营火", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:ladder", "name": "梯子", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:iron_bars", "name": "铁栏杆", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:bamboo", "name": "竹子", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:cake", "name": "蛋糕", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+  {
+    "id": "minecraft:oak_sign", "name": "橡木告示牌", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:white_banner", "name": "白色旗帜", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:shulker_box", "name": "潜影盒", "mod": "minecraft", "category": "block", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+
+  {
+    "id": "minecraft:bucket", "name": "桶", "mod": "minecraft", "category": "general", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:water_bucket", "name": "水桶", "mod": "minecraft", "category": "general", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:lava_bucket", "name": "熔岩桶", "mod": "minecraft", "category": "general", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:milk_bucket", "name": "奶桶", "mod": "minecraft", "category": "general", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  },
+  {
+    "id": "minecraft:compass", "name": "指南针", "mod": "minecraft", "category": "general", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:clock", "name": "时钟", "mod": "minecraft", "category": "general", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:spyglass", "name": "望远镜", "mod": "minecraft", "category": "general", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+  {
+    "id": "minecraft:recovery_compass", "name": "追溯指针", "mod": "minecraft", "category": "general", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+
+  {
+    "id": "minecraft:name_tag", "name": "命名牌", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:lead", "name": "拴绳", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:saddle", "name": "鞍", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+  {
+    "id": "minecraft:potion", "name": "药水", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+  {
+    "id": "minecraft:splash_potion", "name": "喷溅药水", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+  {
+    "id": "minecraft:lingering_potion", "name": "滞留药水", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+  {
+    "id": "minecraft:experience_bottle", "name": "附魔之瓶", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false
+  },
+  {
+    "id": "minecraft:totem_of_undying", "name": "不死图腾", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+  {
+    "id": "minecraft:firework_rocket", "name": "烟花火箭", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:minecart", "name": "矿车", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+  {
+    "id": "minecraft:oak_boat", "name": "橡木船", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 1 }
+  },
+  {
+    "id": "minecraft:item_frame", "name": "物品展示框", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 64 }
+  },
+  {
+    "id": "minecraft:armor_stand", "name": "盔甲架", "mod": "minecraft", "category": "misc", "edible": false, "toolLike": false,
+    "defaults": { "defaultStackSize": 16 }
+  }
+]

@@ -1,0 +1,51 @@
+appId: com.kubeie.app
+productName: KubeIE
+copyright: Copyright © 2026 KubeIE
+directories:
+  buildResources: build
+  output: release
+files:
+  - out/**
+  - package.json
+  # 图标打进 asar，运行时用于窗口 / 任务栏图标
+  - assets/icon.ico
+# 随包分发使用手册（解压后与 exe 同目录）
+extraFiles:
+  - from: 使用手册.md
+    to: 使用手册.md
+  # 图标放到 exe 同目录：安装时创建的快捷方式用它当图标（exe 本体图标见下方说明，受环境限制未写入）
+  - from: assets/icon.ico
+    to: icon.ico
+asar: true
+compression: maximum
+# 复用 npm 已安装并解压好的 Electron 发行版，避免打包时再次联网下载
+electronDist: node_modules/electron/dist
+# 说明（重要）：本项目**不在 electron-builder 里配置任何图标**，也不启用 rcedit / 代码签名。
+# 原因：那些链路都会下载 winCodeSign，而 winCodeSign 内含 macOS 符号链接，
+# 在「非管理员 + 未开启 Windows 开发者模式」的环境下解压必然失败（无 symlink 权限），直接中断打包。
+# 图标改由运行时指定：assets/icon.ico 打进 asar，主进程用 BrowserWindow.icon 设置窗口 / 任务栏图标；
+# 若需要在 exe 上嵌入图标（影响资源管理器里的文件图标），请开启 Windows 开发者模式后自行按手册配置。
+win:
+  signAndEditExecutable: false
+  target:
+    # NSIS 安装包（含开始菜单/桌面快捷方式）
+    - target: nsis
+      arch:
+        - x64
+    # zip 便携包（解压即用，可直接部署或分发）
+    - target: zip
+      arch:
+        - x64
+nsis:
+  artifactName: KubeIE-${version}-setup.${ext}
+  # 自定义卸载流程：卸载前弹窗告知删除范围，可选是否删除配置与编辑记录；
+  # 不会删除游戏目录内已生成的 .js 脚本与存档（见 build/uninstall.nsh）
+  include: build/uninstall.nsh
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  # 快捷方式改由 build/uninstall.nsh 的 customInstall 创建（用 exe 同目录的 icon.ico 当图标），
+  # 因为 exe 本体图标无法在本环境写入（rcedit → winCodeSign 解压失败），用 exe 当图标会变成默认 Electron 图标。
+  createDesktopShortcut: false
+  createStartMenuShortcut: false
+  shortcutName: KubeIE

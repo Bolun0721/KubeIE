@@ -1,0 +1,31 @@
+# ---- 依赖与构建产物 ----
+node_modules/
+out/
+dist/
+release/
+win-unpacked/
+
+# ---- 本地缓存（Electron 二进制 / electron-builder 二进制）----
+.electron-cache/
+.electron-builder-cache/
+.vite/
+
+# ---- 本机环境记录：含本机用户名 / 绝对路径 / 硬件信息，不随仓库发布 ----
+环境配置记录.txt
+
+# ---- 备份与本地覆盖文件 ----
+*.bak
+*.local
+*.orig
+
+# ---- 日志与系统文件 ----
+*.log
+logs/
+.DS_Store
+Thumbs.db
+
+# ---- 编辑器 / IDE 个人配置 ----
+.idea/
+*.suo
+*.user
+*.code-workspace

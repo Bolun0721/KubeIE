@@ -1,0 +1,177 @@
+/**
+ * 全局样式与主题。
+ *
+ * 对比度原则：只**加深**、不调浅。
+ * - 文本统一用更深的灰阶（正文 #1f2733 / 次要 #4a5261 / 提示 #5b6472）；
+ * - 边框加深一档，避免面板边界糊在一起；
+ * - 同步覆盖 Element Plus 的文本与边框 token，保证第三方组件一致。
+ */
+:root {
+  /* 覆盖 Element Plus 主题 token：文本更深、边框更清晰 */
+  --el-text-color-primary: #1f2733;
+  --el-text-color-regular: #37404e;
+  --el-text-color-secondary: #4a5261;
+  --el-text-color-placeholder: #7b8494;
+  --el-text-color-disabled: #9aa3b2;
+  --el-border-color: #ccd2dc;
+  --el-border-color-light: #d9dee7;
+  --el-border-color-lighter: #e3e7ef;
+  --el-border-color-extra-light: #edf0f6;
+  --el-fill-color-light: #f2f4f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  color: #1f2733;
+  background: #eef1f6;
+  overflow: hidden;
+}
+
+.workspace {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  height: 100%;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #fff;
+  border: 1px solid #ccd2dc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #d9dee7;
+  font-weight: 600;
+  color: #1f2733;
+  flex: none;
+}
+
+.panel-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 12px;
+}
+
+.panel-footer {
+  flex: none;
+  padding: 10px 12px;
+  border-top: 1px solid #d9dee7;
+  display: flex;
+  flex-wrap: wrap; /* 面板较窄时按钮换行，避免最右侧按钮被裁掉 */
+  gap: 8px;
+}
+
+.mono {
+  font-family: Consolas, 'Courier New', monospace;
+}
+
+.hint {
+  color: #5b6472;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f2733;
+}
+
+.code-block {
+  margin: 0;
+  padding: 12px;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 6px;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 12.5px;
+  line-height: 1.7;
+  white-space: pre;
+  overflow: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.empty-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 100%;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* 覆盖提示 / 写入成功弹窗中的多行文案保留换行 */
+.write-confirm .el-message-box__message p,
+.write-confirm .el-message-box__message {
+  white-space: pre-line;
+}
+
+/* 编辑记录抽屉：内容自带面板内边距，去掉抽屉默认内边距 */
+.records-drawer .el-drawer__body {
+  padding: 0;
+  overflow: hidden;
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+}
+
+.log-item {
+  display: flex;
+  gap: 8px;
+  padding: 2px 0;
+}
+
+.log-time {
+  color: #6b7280;
+  flex: none;
+}
+
+.log-info {
+  color: #4a5261;
+}
+
+.log-success {
+  color: #67c23a;
+}
+
+.log-warning {
+  color: #e6a23c;
+}
+
+.log-error {
+  color: #f56c6c;
+}

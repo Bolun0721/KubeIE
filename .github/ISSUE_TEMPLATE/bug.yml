@@ -1,0 +1,58 @@
+name: Bug 反馈
+description: 报告软件缺陷、生成的脚本报错或界面异常
+title: '[Bug] '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量填完整，尤其是**报错原文**与**复现步骤**，能大幅加快定位速度。
+        提交前可先查一下 [`使用手册.md`](../blob/main/使用手册.md) 的「常见问题」章节。
+  - type: input
+    id: version
+    attributes:
+      label: 软件版本
+      description: 见软件标题栏或 Release 名称，例如 0.1.0
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 环境版本
+      description: Minecraft / Forge / KubeJS / Curios / kubejs_curios 的版本
+      placeholder: 1.20.1 / Forge 47.4.23 / KubeJS 2001.6.5-build.26 / Curios 5.14.1 / kubejs_curios 1.0.4
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从打开软件到出问题的完整操作
+      placeholder: |
+        1. 打开软件，选择游戏目录 …
+        2. 切到「物品自定义」…
+        3. 点击「应用修改」…
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果 / 实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 报错日志
+      description: 软件内的「操作日志」面板内容，或游戏 `logs/latest.log`、`logs/kubejs/*.log` 的相关片段
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充说明
+      description: 截图、生成的脚本内容等
+    validations:
+      required: false
