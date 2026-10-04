@@ -24,6 +24,11 @@ logs/
 .DS_Store
 Thumbs.db
 
+# ---- 本地临时输出（调试命令重定向产生的文件）----
+pack-log.txt
+ci-check.txt
+*-check.txt
+
 # ---- 编辑器 / IDE 个人配置 ----
 .idea/
 *.suo

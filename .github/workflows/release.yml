@@ -1,22 +1,32 @@
 name: Release
 
-# 推送 v* 标签时自动打包 Windows 安装包 / 便携包，并创建草稿 Release
+# 推送 v* 标签时自动打包 Windows 安装包 / 便携包，并创建草稿 Release。
+# 也可以在 Actions 页面手动触发（需填写已存在的 tag，例如 v0.1.0）。
 on:
   push:
     tags:
       - 'v*'
   workflow_dispatch:
+    inputs:
+      tag:
+        description: '要发布的标签（需已存在，例如 v0.1.0）'
+        required: true
+        default: 'v0.1.0'
 
 permissions:
   contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 20
           cache: npm
@@ -24,20 +34,41 @@ jobs:
       - name: 安装依赖
         run: npm ci
 
-      - name: 校验
+      - name: 确认 Electron 发行版已就绪（打包时复用，不联网下载）
+        shell: bash
         run: |
-          npm run typecheck
-          npm test
+          if [ ! -d "node_modules/electron/dist" ]; then
+            echo "::error::node_modules/electron/dist 不存在，npm ci 可能跳过了 electron 的 postinstall"
+            exit 1
+          fi
 
+      - name: 类型检查
+        run: npm run typecheck
+
+      - name: 单元测试
+        run: npm test
+
+      # GitHub 的 windows runner 有创建符号链接的权限，winCodeSign 可正常解压，
+      # 因此这里通过 CLI 覆盖打开 exe 图标与资源改写（本地打包默认关闭，见 electron-builder.yml）。
+      # 若该环境不支持，自动回退为默认图标重新打包，保证 Release 仍然产出。
       - name: 打包（安装包 + 便携 zip）
-        # GitHub 的 windows runner 有创建符号链接的权限，winCodeSign 可正常解压，
-        # 因此这里通过 CLI 覆盖打开 exe 图标与资源改写（本地打包默认关闭，见 electron-builder.yml）。
-        run: >
-          npx electron-builder --win --config electron-builder.yml --publish never
-          -c.win.icon=assets/icon.ico
-          -c.win.signAndEditExecutable=true
+        shell: bash
+        run: |
+          if npx electron-builder --win --config electron-builder.yml --publish never \
+               -c.win.icon=assets/icon.ico \
+               -c.win.signAndEditExecutable=true; then
+            echo "已把图标写入 exe"
+          else
+            echo "::warning::带图标打包失败（多为 winCodeSign 解压受限），改用默认图标重新打包"
+            rm -rf release
+            npx electron-builder --win --config electron-builder.yml --publish never
+          fi
 
-      - name: 上传构建产物
+      - name: 列出构建产物
+        shell: bash
+        run: ls -lh release
+
+      - name: 上传构建产物（Actions Artifacts）
         uses: actions/upload-artifact@v4
         with:
           name: KubeIE-windows
@@ -50,6 +81,7 @@ jobs:
       - name: 创建草稿 Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
           draft: true
           generate_release_notes: true
           files: |
