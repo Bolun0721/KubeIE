@@ -26,8 +26,10 @@ const PORTABLE = path.join('D:', 'tools', 'KubeJS Item Editor', PORTABLE_DATA_DI
 
 describe('legacyUserDataDir - 软件更名后的旧数据目录', () => {
   it('给出同级目录下的旧名字目录', () => {
-    expect(legacyUserDataDir(path.join('C:', 'Users', 'tester', 'AppData', 'Roaming', 'kubeie'))).toBe(
-      path.join('C:', 'Users', 'tester', 'AppData', 'Roaming', LEGACY_USER_DATA_DIR)
+    // 用 path.resolve 归一化：Windows 上 'C:\...' 本身即绝对路径，
+    // Linux 上会补上前缀，断言与实现保持同一套语义（CI 在 ubuntu 上跑）
+    expect(legacyUserDataDir(path.resolve('C:', 'Users', 'tester', 'AppData', 'Roaming', 'kubeie'))).toBe(
+      path.resolve('C:', 'Users', 'tester', 'AppData', 'Roaming', LEGACY_USER_DATA_DIR)
     )
   })
 

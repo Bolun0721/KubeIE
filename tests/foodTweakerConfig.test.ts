@@ -51,8 +51,9 @@ afterEach(() => {
 
 describe('路径与状态检测', () => {
   it('配置路径固定在 <游戏目录>/config/foodtweaker.json', () => {
+    // 期望值同样先 path.resolve：Windows 下 'D:\...' 绝对，Linux 下会补前缀（CI 在 ubuntu 上跑）
     expect(resolveFoodConfigPath('D:\\mc\\versions\\1.20.1-Forge')).toBe(
-      path.join('D:\\mc\\versions\\1.20.1-Forge', 'config', FOOD_CONFIG_FILE)
+      path.join(path.resolve('D:\\mc\\versions\\1.20.1-Forge'), 'config', FOOD_CONFIG_FILE)
     )
     expect(resolveFoodConfigPath('')).toBe('')
   })
